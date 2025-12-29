@@ -67,6 +67,16 @@ test_gem() {
         require_name="sinatra/base"
     fi
 
+    # Special handling for digest-crc - require 'digest/crc' instead of 'digest-crc'
+    if [ "${gem_name}" = "digest-crc" ]; then
+        require_name="digest/crc"
+    fi
+
+    # Special handling for rack-session - require 'rack/session' instead of 'rack-session'
+    if [ "${gem_name}" = "rack-session" ]; then
+        require_name="rack/session"
+    fi
+
     # Run Ruby in a subprocess to isolate crashes (prevents script exit on SIGILL)
     # The & backgrounds the process, and wait captures its exit code
     ruby -e "begin; require '${require_name}'; rescue LoadError; exit 1; end" >/dev/null 2>&1 &
