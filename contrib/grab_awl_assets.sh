@@ -19,3 +19,9 @@ curl http://$IP/images/back.png > html/images/back.png
 curl http://$IP/images/cfailed.png > html/images/cfailed.png
 curl http://$IP/images/cgood.png > html/images/cgood.png
 curl http://$IP/images/cidle.png > html/images/cidle.png
+
+# Missing files discovered by check_web_aid_files.sh:
+# TODO: Locate and add these files to the download list above
+#   - indexat.htm          → html/indexat.htm
+#   - js/AjaxSlim.js       → html/js/AjaxSlim.js
+#                            (might not be needed - currently commented out in config.htm)
