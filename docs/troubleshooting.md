@@ -59,7 +59,7 @@ aurora_fetch /dev/ttyACM0 2
 - Check A+ and B- connections
 - Verify cable continuity
 - Ensure no shorts or damage
-- See [Hardware Guide](../HARDWARE.md)
+- See [Hardware Guide](connections/hardware.md)
 
 **C. Wrong baud/parity**
 
@@ -656,7 +656,7 @@ For questions rather than bugs: [GitHub Discussions](https://github.com/ccutrer/
 
 ## Related Documentation
 
-- [Hardware Guide](../HARDWARE.md) - Physical connection help
+- [Hardware Guide](connections/hardware.md) - Physical connection help
 - [Serial Connection](connections/serial.md) - Serial port setup
 - [Network Connection](connections/network.md) - TCP/RFC2217 setup
 - [MQTT Bridge](integration/mqtt.md) - MQTT configuration

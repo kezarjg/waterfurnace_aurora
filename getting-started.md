@@ -5,7 +5,7 @@ Raspberry Pi (tested on a Pi Zero W and a Pi 4), a
 [USB RS-485 adapter](https://www.amazon.com/dp/B07B416CPK)
 ([alternative](https://www.amazon.com/dp/B081MB6PN2)),
 and a network cable. Any adapter based on the MAX485 chip is _not_ supported.
-Additional details can be found in the [Hardware Guide](HARDWARE.md) if
+Additional details can be found in the [Hardware Guide](docs/connections/hardware.md) if
 you want to deviate slightly from the simple path.
 
 ## Prerequisites
@@ -27,7 +27,7 @@ USB adapter:
 
 ![Cable](doc/cable.jpg)
 
-**Important**: See the [Hardware Guide](HARDWARE.md) for detailed wiring information and safety warnings about power pins.
+**Important**: See the [Hardware Guide](docs/connections/hardware.md) for detailed wiring information and safety warnings about power pins.
 
 ## Step 2: Connect to Your Heat Pump
 

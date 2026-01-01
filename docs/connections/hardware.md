@@ -14,19 +14,16 @@ This guide covers the physical connections needed to communicate with your Water
 
 **⚠️ CRITICAL SAFETY INFORMATION ⚠️**
 
-The AID tool port carries both RS-485 communication signals AND 24VAC power:
-- Pins 1, 3: RS-485+ (white/orange, white/green)
-- Pins 2, 4: RS-485- (orange, blue)
-- **Other pins: 24VAC power (C and R from thermostat bus)**
+**THE AID TOOL PORT IS NOT ETHERNET**
+- The "AID Tool Port" on the heat pump and Aurora Web Link uses an RJ-45 connector but is **NOT Ethernet**
+- **NEVER connect a laptop, router, switch, or any Ethernet device to the AID Tool Port**
+- This port carries **RS-485 communication signals AND 24 VAC power**
+- Connecting Ethernet equipment **WILL damage** your laptop, the heat pump, or both
 
-**DO NOT SHORT POWER PINS:**
-- Do not connect power pins to communication pins
-- Do not connect power pins to ground anywhere
-- Do not short power pins together
-
-**Consequences of shorting:**
-- Best case: Blow 3A automotive fuse in heat pump (requires replacement)
-- Worst case: Permanently damage ABC board
+**DO NOT SHORT POWER PINS**
+- Only connect the RS-485 signal pins (see wiring instructions below)
+- **Never connect, short, or ground the 24 VAC power pins**
+- Shorting power pins can blow the heat pump’s 3 A fuse or permanently damage the ABC board
 
 **You have been warned. Proceed carefully and at your own risk.**
 
@@ -181,7 +178,7 @@ Advanced users can connect RS-485 directly to Raspberry Pi GPIO pins with proper
 
 ## Next Steps
 
-- [Getting Started Guide](GETTING_STARTED.md) - Quick software setup
-- [Serial Connection Guide](docs/connections/serial.md) - Software configuration for serial ports
-- [Network Connection Guide](docs/connections/network.md) - Using network serial ports
-- [Troubleshooting](docs/troubleshooting.md) - Common issues and solutions
+- [Getting Started Guide](../../getting-started.md) - Quick software setup
+- [Serial Connection Guide](serial.md) - Software configuration for serial ports
+- [Network Connection Guide](network.md) - Using network serial ports
+- [Troubleshooting](../troubleshooting.md) - Common issues and solutions

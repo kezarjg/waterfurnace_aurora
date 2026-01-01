@@ -16,7 +16,7 @@ The bridge uses the [Homie convention](https://homieiot.github.io) for self-desc
 ## Prerequisites
 
 - MQTT broker (e.g., [Mosquitto](https://mosquitto.org))
-- RS-485 connection to heat pump (see [Hardware Guide](../../HARDWARE.md))
+- RS-485 connection to heat pump (see [Hardware Guide](../connections/hardware.md))
 - Ruby 2.5+ with waterfurnace_aurora gem installed
 
 ## Basic Usage

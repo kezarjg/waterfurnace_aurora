@@ -26,7 +26,7 @@ The Aurora ABC uses a ModBus-based protocol with:
   - One to heat pump
   - One to computer
   - One to AID Tool/AWL
-- See [Hardware Guide](../../HARDWARE.md#in-line-monitoring-sniffing)
+- See [Hardware Guide](../connections/hardware.md#in-line-monitoring-sniffing)
 
 **For direct querying:**
 - Single RS-485 connection to heat pump
@@ -44,7 +44,7 @@ The Aurora ABC uses a ModBus-based protocol with:
 
 ### Setup
 
-1. Connect in-line between AID Tool and ABC (see [Hardware Guide](../../HARDWARE.md))
+1. Connect in-line between AID Tool and ABC (see [Hardware Guide](../connections/hardware.md))
 2. Start monitoring:
    ```bash
    aurora_monitor /dev/ttyUSB0 -q | tee session.log

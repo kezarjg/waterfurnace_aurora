@@ -4,10 +4,10 @@ Complete documentation for the WaterFurnace Aurora gem.
 
 ## Quick Navigation
 
-**New users:** Start with [Getting Started Guide](../GETTING_STARTED.md)
+**New users:** Start with [Getting Started Guide](../getting-started.md)
 
 **Quick reference:**
-- [Hardware Setup](../HARDWARE.md)
+- [Hardware Setup](connections/hardware.md)
 - [Troubleshooting](troubleshooting.md)
 - [MQTT Bridge](integration/mqtt.md)
 
@@ -17,8 +17,8 @@ Complete documentation for the WaterFurnace Aurora gem.
 
 Essential guides for new users:
 
-- **[Getting Started Guide](../GETTING_STARTED.md)** - Quick setup on Raspberry Pi
-- **[Hardware Connection Guide](../HARDWARE.md)** - Cable creation, wiring, and safety
+- **[Getting Started Guide](../getting-started.md)** - Quick setup on Raspberry Pi
+- **[Hardware Connection Guide](connections/hardware.md)** - Cable creation, wiring, and safety
 - **[Installation Guide](installation.md)** - Detailed installation for all platforms
 
 ### 🏠 Integration
@@ -109,37 +109,37 @@ Additional resources:
 
 ### "I want to integrate with Home Assistant"
 
-1. [Hardware Setup](../HARDWARE.md) - Build your cable
-2. [Getting Started](../GETTING_STARTED.md) - Install software
+1. [Hardware Setup](connections/hardware.md) - Build your cable
+2. [Getting Started](../getting-started.md) - Install software
 3. [Home Assistant Integration](integration/home-assistant.md) - Configure HA
 
 ### "I want to control via web browser"
 
-1. [Hardware Setup](../HARDWARE.md) - Build your cable
+1. [Hardware Setup](connections/hardware.md) - Build your cable
 2. [Web AID Tool](tools/web_aid_tool.md) - Set up web interface
 3. Download AWL assets (see web_aid_tool docs)
 
 ### "I want to integrate with OpenHAB"
 
-1. [Hardware Setup](../HARDWARE.md) - Build your cable
+1. [Hardware Setup](connections/hardware.md) - Build your cable
 2. [MQTT Bridge](integration/mqtt.md) - Set up MQTT
 3. [OpenHAB Integration](integration/openhab.md) - Configure OpenHAB
 
 ### "I want to query registers from command line"
 
-1. [Hardware Setup](../HARDWARE.md) - Build your cable
+1. [Hardware Setup](connections/hardware.md) - Build your cable
 2. [Serial Connection](connections/serial.md) - Set up connection
 3. [aurora_fetch](tools/aurora_fetch.md) - Query registers
 
 ### "I want to discover new features"
 
-1. [Hardware Setup](../HARDWARE.md) - Set up in-line monitoring
+1. [Hardware Setup](connections/hardware.md) - Set up in-line monitoring
 2. [aurora_monitor](tools/aurora_monitor.md) - Monitor traffic
 3. [Reverse Engineering Guide](development/reverse-engineering.md) - Methodology
 
 ### "I want to run on Windows"
 
-1. [Hardware Setup](../HARDWARE.md) - Build your cable
+1. [Hardware Setup](connections/hardware.md) - Build your cable
 2. [Network Connection](connections/network.md) - Set up ser2net on Linux device
 3. Connect from Windows via TCP
 
@@ -203,8 +203,7 @@ Documentation improvements welcome!
 
 ### Root Level
 - [README.md](../README.md) - Main project overview
-- [GETTING_STARTED.md](../GETTING_STARTED.md) - Quick start guide
-- [HARDWARE.md](../HARDWARE.md) - Hardware connections
+- [getting-started.md](../getting-started.md) - Quick start guide
 - [docker/README.md](../docker/README.md) - Docker deployment
 
 ### Integration
@@ -219,6 +218,7 @@ Documentation improvements welcome!
 - [tools/web_aid_tool.md](tools/web_aid_tool.md) - Web interface
 
 ### Connections
+- [connections/hardware.md](connections/hardware.md) - Hardware setup and wiring
 - [connections/serial.md](connections/serial.md) - Serial port connection
 - [connections/network.md](connections/network.md) - Network connections
 
@@ -232,4 +232,4 @@ Documentation improvements welcome!
 
 ---
 
-**[Back to Main README](../README.md)** | **[Get Started](../GETTING_STARTED.md)**
+**[Back to Main README](../README.md)** | **[Get Started](../getting-started.md)**

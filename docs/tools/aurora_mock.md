@@ -313,7 +313,7 @@ docker run -p 2000:2000 aurora-mock
 
 - [Development Guide](../development/) - Building new features
 - [Testing Guide](../development/testing.md) - Automated testing (if created)
-- [Hardware Guide](../../HARDWARE.md) - Connect to real ABC
+- [Hardware Guide](../connections/hardware.md) - Connect to real ABC
 
 ## Contributing Dumps
 

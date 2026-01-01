@@ -12,7 +12,7 @@ Serial connection is the most common method, using an RS-485 to USB adapter conn
 - Ethernet cable with RJ45 jack
 - Computer with USB port
 
-See [Hardware Guide](../../HARDWARE.md) for wiring details.
+See [Hardware Guide](hardware.md) for wiring details.
 
 ## Device Paths
 
@@ -222,7 +222,7 @@ Timeout reading register
 
 4. **Adapter quality:**
    - Some cheap adapters are unreliable
-   - Try recommended adapters from [Hardware Guide](../../HARDWARE.md)
+   - Try recommended adapters from [Hardware Guide](hardware.md)
 
 ### Multiple Devices
 
@@ -325,6 +325,6 @@ See [Network Connections](network.md) for details.
 ## Next Steps
 
 - [Network Connections](network.md) - Use serial over network
-- [Hardware Guide](../../HARDWARE.md) - Wiring and safety
+- [Hardware Guide](hardware.md) - Wiring and safety
 - [Troubleshooting](../troubleshooting.md) - Common issues
 - [MQTT Bridge](../integration/mqtt.md) - Share serial port via MQTT

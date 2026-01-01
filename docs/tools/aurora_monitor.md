@@ -132,7 +132,7 @@ Use an [RJ45 breakout board](https://www.amazon.com/dp/B01GNOBDPM):
 2. Cable from breakout board to your RS-485 adapter
 3. Cable from breakout board to AID Tool or AWL
 
-See [Hardware Guide](../../HARDWARE.md#in-line-monitoring-sniffing) for details.
+See [Hardware Guide](../connections/hardware.md#in-line-monitoring-sniffing) for details.
 
 ### Why In-Line?
 
@@ -347,7 +347,7 @@ diff before.log after.log
 - [Reverse Engineering Guide](../development/reverse-engineering.md) - Discover new registers
 - [Register Reference](../development/registers.md) - Document findings
 - [Protocol Documentation](../development/protocol.md) - Understand ModBus extensions
-- [Hardware Guide](../../HARDWARE.md) - Set up in-line monitoring
+- [Hardware Guide](../connections/hardware.md) - Set up in-line monitoring
 
 ## Tips for Success
 

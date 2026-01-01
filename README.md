@@ -18,8 +18,8 @@ This gem enables local control and monitoring of WaterFurnace geothermal heat pu
 
 **New to this project?** Jump right in:
 
-- **🚀 [Getting Started Guide](GETTING_STARTED.md)** - Quick setup on Raspberry Pi
-- **🔧 [Hardware Setup](HARDWARE.md)** - Build your RS-485 cable
+- **🚀 [Getting Started Guide](getting-started.md)** - Quick setup on Raspberry Pi
+- **🔧 [Hardware Setup](docs/connections/hardware.md)** - Build your RS-485 cable
 
 Already familiar? Choose your path:
 
@@ -61,7 +61,7 @@ Already familiar? Choose your path:
 
 ### Raspberry Pi (Recommended)
 
-See the **[Getting Started Guide](GETTING_STARTED.md)** for complete Raspberry Pi setup.
+See the **[Getting Started Guide](getting-started.md)** for complete Raspberry Pi setup.
 
 Quick version:
 ```bash
@@ -109,8 +109,8 @@ This gem has been tested with:
 ## Documentation
 
 ### Getting Started
-- **[Getting Started Guide](GETTING_STARTED.md)** - Raspberry Pi quick setup
-- **[Hardware Connection Guide](HARDWARE.md)** - Cable creation and wiring
+- **[Getting Started Guide](getting-started.md)** - Raspberry Pi quick setup
+- **[Hardware Connection Guide](docs/connections/hardware.md)** - Cable creation and wiring
 - **[Installation](docs/installation.md)** - Detailed installation for all platforms
 
 ### Integration
@@ -232,7 +232,7 @@ See [Architecture Documentation](docs/architecture.md) for details.
 - Know how to reset to factory defaults
 - Consult HVAC professional if unsure
 
-See [Hardware Guide](HARDWARE.md) for electrical safety information.
+See [Hardware Guide](docs/connections/hardware.md) for electrical safety information.
 
 ## License
 
@@ -257,4 +257,4 @@ See [CHANGELOG](CHANGELOG.md) for release history.
 
 ---
 
-**Ready to get started?** Head to the **[Getting Started Guide](GETTING_STARTED.md)**!
+**Ready to get started?** Head to the **[Getting Started Guide](getting-started.md)**!
