@@ -102,6 +102,7 @@ class MQTTBridge
   end
 
   def join
+    consecutive_errors = 0
     loop do
       begin
         @mutex.synchronize do
@@ -134,8 +135,20 @@ class MQTTBridge
             end
           end
         end
+        consecutive_errors = 0
+      rescue ::ModBus::Errors::ModBusException,
+             IOError,
+             SystemCallError,
+             Timeout::Error => e
+        consecutive_errors += 1
+        Aurora.logger&.warn("#{e.class} during polling: #{e.message}" \
+                            " (#{consecutive_errors} consecutive)")
+        if consecutive_errors >= 10
+          Aurora.logger&.fatal("Too many consecutive errors, exiting for restart")
+          exit 1
+        end
       rescue => e
-        warn "got garbage: #{e}; #{e.backtrace}"
+        Aurora.logger&.fatal("#{e.class}: #{e.message}\n#{e.backtrace&.join("\n")}")
         exit 1
       end
       sleep(5)
