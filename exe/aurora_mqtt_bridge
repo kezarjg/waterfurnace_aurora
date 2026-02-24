@@ -133,6 +133,7 @@ class MQTTBridge
               @faults["e#{i + 1}"].value = fault_count
             end
           end
+          @homie.mqtt.publish("#{@homie.topic}/$state", "ready", retain: true, qos: 1)
         end
       rescue => e
         warn "got garbage: #{e}; #{e.backtrace}"
